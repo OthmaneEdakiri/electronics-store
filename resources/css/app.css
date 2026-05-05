@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    @apply max-w-[1170px] mx-auto px-5;
+}
+
+@layer utilities {
+  .no-spinner::-webkit-outer-spin-button,
+  .no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .no-spinner {
+    -moz-appearance: textfield;
+  }
+
+  .cta{
+    @apply flex items-center gap-2;
+  }
+
+  .cta span{
+    @apply relative h-[1px] w-3 group-hover:w-6 bg-black transition-all;
+  }
+  .cta span::before{
+    @apply absolute content-[''] right-0 top-1/2 transform -translate-y-1/2 rotate-[-40deg] h-[6px] w-[6px] bg-transparent border-[1.5px] border-t-transparent border-b-black border-l-transparent border-r-black;
+  }
+}
+
