@@ -98,7 +98,7 @@ Follow these steps to run the project on your local machine:
 
 ## 📥 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/electronics-store.git
+git clone https://github.com/OthmaneEdakiri/electronics-store.git
 cd electronics-store
 ```
 
