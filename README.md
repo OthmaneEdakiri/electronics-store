@@ -91,3 +91,63 @@ The cart system allows users to:
 - CSRF Protection
 - Form Validation
 - Authentication Middleware
+
+# ⚙️ Installation & Local Setup
+
+Follow these steps to run the project on your local machine:
+
+## 📥 1. Clone the repository
+```bash
+git clone https://github.com/your-username/electronics-store.git
+cd electronics-store
+```
+
+## 📦 2. Install dependencies
+#### Backend (Laravel)
+```bash
+composer install
+```
+#### Frontend assets
+```
+npm install
+npm run dev
+```
+
+## ⚙️ 3. Environment setup
+```bash
+cp .env.example .env
+```
+
+Then configure your database in ```.env```:
+```env
+DB_DATABASE=your_database_name
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
+
+## 🗄️ 5. Run migrations
+```bash
+php artisan migrate
+```
+
+## 🌱 6. Seed the database (Admin account)
+
+Run the seeder to create default data including the admin user:
+```bash
+php artisan db:seed
+```
+### 👨‍💼 Admin Credentials
+```
+Email: admin@example.com
+Password: 12345678
+```
+
+## 🚀 7. Start the development server
+```bash
+php artisan serve
+```
+
+Open in your browser:
+```
+http://127.0.0.1:8000
+```
